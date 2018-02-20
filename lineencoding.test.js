@@ -20,7 +20,9 @@ it("tests line length bigger than 15",()=>{
 		encodeline("aaabbbbbbbbbbbbbbbbbbbbbbbbbbb");
 	}).toThrow("InvalidStringLength");
 })
-
+it("tests line only english letters",()=>{
+	expect(()=>{encodeline("53333")}).toThrow("InvalidStringError");
+});
 it("test only one letter 5 times",()=>{
 	expect(encodeline("aaaaa")).toBe("5a");
 })

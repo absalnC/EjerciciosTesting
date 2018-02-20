@@ -31,6 +31,9 @@ function encodeline(str){
 	if(str.length<4||str.length>15){
 		throw new Error("InvalidStringLength");
 	}
+	if(!/^[A-Za-z]*$/.test(str)){
+		throw new Error("InvalidStringError");
+	}
 	//separar linea en caracteres
 	const splitted=str.split("");
 	//separar secuencias repetidas de caracteres en multiples arreglos
@@ -67,8 +70,6 @@ function separate(arr){
 			}
 		}
 		else{
-
-			
 			partial.push(currSeq);
 			currletter=arr[i];
 			currSeq=[arr[i]];
