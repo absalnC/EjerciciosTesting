@@ -1,2 +1,12 @@
 -juego ping pong
 -pomodoro
+-memorama
+-calendario
+-buscaminas
+
+Spring
+
+-Aplicacion de biblioteca
+-Venta de boletos de autobus
+-Citas medicas
+-Sistemas de votacion

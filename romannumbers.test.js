@@ -25,12 +25,59 @@ it("tests only I's",()=>{
 it("tests 4 ",()=>{
 	expect(toRoman(4)).toBe("IV");
 });
-//it("tests 9",)
-/*
-it("tests number bigger than 10",()=>{
-	expect(toRoman(53).toBe("L"))
+it("tests 5",()=>{
+	expect(toRoman(5)).toBe("V");
 })
-it("tests numbers with last digit 9",()=>{
+
+it("tests 7",()=>{
+	expect(toRoman(7)).toBe("VII");
+})
+
+it("tests 9",()=>{
 	expect(toRoman(9)).toBe("IX");
-	expect(toRoman(599)).toBe("i")
-})*/
+})
+
+it("tests 0",()=>{
+	expect(toRoman(0)).toBe("");
+})
+
+
+it("tests only X",()=>{
+	expect(toRoman(10)).toBe("X");
+	expect(toRoman(20)).toBe("XX");
+	expect(toRoman(30)).toBe("XXX");
+});
+
+
+it("tests 40",()=>{
+	expect(toRoman(40)).toBe("XL");
+})
+it("tests 90",()=>{
+	expect(toRoman(90)).toBe("XC");
+})
+
+it("tests combinations of units and tens",()=>{
+	expect(toRoman(23)).toBe("XXIII");
+	expect(toRoman(19)).toBe("XIX");
+	expect(toRoman(34)).toBe("XXXIV");
+	expect(toRoman(45)).toBe("XLV");
+	expect(toRoman(29)).toBe("XXIX");
+	expect(toRoman(99)).toBe("XCIX");
+
+})
+it("tests 100",()=>{
+	expect(toRoman(100)).toBe("C");
+})
+
+it("tests 400",()=>{
+	expect(toRoman(400)).toBe("CD");
+})
+
+it("tests 900",()=>{
+	expect(toRoman(900)).toBe("CM");
+})
+
+it("tests 500",()=>{
+	expect(toRoman(500)).toBe("D");
+})
+
